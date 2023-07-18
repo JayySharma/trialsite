@@ -15,3 +15,21 @@ body::before {
       width: 50%;
     }
   }
+
+
+  span.welcome::before {
+    content: "recruiter";
+    animation: animate infinite 5s;
+    padding-left: 0px;
+}
+
+@keyframes animate {
+
+    33% {
+        content: "fellow photophile";
+    }
+
+    66% {
+        content: "fren";
+    }
+}
