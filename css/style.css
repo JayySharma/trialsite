@@ -1,3 +1,17 @@
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #106af1;
+}
+
+
 body::before {
     display: block;
     content: '';
@@ -21,6 +35,10 @@ body::before {
     content: "recruiter";
     animation: animate infinite 5s;
     padding-left: 0px;
+}
+
+.hideScroll::-webkit-scrollbar {
+  display: none;
 }
 
 @keyframes animate {
